@@ -12,3 +12,10 @@
         </div>
     </div>
 <% } %>
+<% if(page.comments && theme.twikoo.enabled){ %>
+    <div class="blog-post-comments">
+        <div id="twikoo_thread">
+            <noscript><%= __('comments.no_js') %></noscript>
+        </div>
+    </div>
+<% } %>
