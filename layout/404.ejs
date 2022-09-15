@@ -1,0 +1,13 @@
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <%- partial('_partial/post/gallery') %>
+    <div class="content" itemprop="articleBody">
+        <% if (theme.error_404.enabled) { %>
+            <h1><%= theme.error_404.title %></h1>
+            <p><%= theme.error_404.description %></p>
+            <% if (theme.error_404.search) { %>
+              <p><%= theme.error_404.search_prompt %></p>
+              <%- partial('_partial/search') %>
+            <% } %>
+          <% } %>
+    </div>
+  </article>

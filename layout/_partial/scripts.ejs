@@ -42,7 +42,7 @@
 <% } %>
 <%- js('js/main') %>
 <!-- search -->
-<% if (config.search && (page.search || page.type === "search")){ %>
+<% if (config.search && (page.search || page.type === "search" || page.path === "404.html")){ %>
   <%- js('js/search.js') %>
   <script type="text/javascript">
   $(function() {
